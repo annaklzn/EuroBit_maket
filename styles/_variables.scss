@@ -1,0 +1,176 @@
+$black: #000;
+$white: #FFFFF0;
+$grey: #b6b7b2;
+$yellow: #e7b700;
+$fire: #b80e0f;
+$greyLight: #d5d1c8;
+$greyLight2: #f5f5f5;
+$greyLight3: #e4e4e4;
+$greyDark: #303030;
+$greyDark2: #1c1c1c;
+
+%gradient {
+	background: -moz-linear-gradient(16deg, $fire , $yellow);
+	background: -webkit-linear-gradient(16deg, $fire , $yellow);
+	background: -ms-linear-gradient(16deg, $fire , $yellow);
+	background: linear-gradient(16deg, $fire , $yellow);
+}
+
+%gradientHover {
+	background: -moz-linear-gradient(16deg, $yellow, $fire);
+	background: -webkit-linear-gradient(16deg, $yellow, $fire);
+	background: -ms-linear-gradient(16deg, $yellow, $fire);
+	background: linear-gradient(16deg, $yellow, $fire);
+	transition: background 0.7s;
+}
+
+%boldText {
+	font-family: 'Proxima Nova Bd', sans-serif;
+}
+
+%regularText {
+	font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+%lightText {
+	font-family: 'Proxima Nova Lt', sans-serif;
+}
+
+%header {
+	font-size: 3.0rem;
+}
+ 
+%subheader {
+	font-size: 1.6rem;
+} 
+
+%smallText {
+	font-size: 0.77rem;
+}
+
+%paddingColumnRight {
+	padding-right: 4.44rem;
+}
+
+%paddingColumnLeft {
+	padding-left: 4.44rem;
+}
+
+%button {
+  width: 205px;
+  padding: 0.88rem 0.88rem;
+  border-radius: 1.7rem;
+  color: $white;
+  @extend %gradient;
+  @extend %regularText;
+  &:hover {
+  	@extend %gradientHover;
+  }
+  &:active {
+  	border-color: transparent;
+  }
+  &:focus {
+  	border-color: transparent;
+  }
+}
+
+
+
+/*Media queries*/
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: 320px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+/* General styles */
+html {
+	font-size: 18px;
+}
+
+.container {
+	@include xl {
+	width: 1353px;
+	}
+}	
+
+.textUp{
+	text-transform: uppercase;
+}
+
+@mixin marginLR($marginL, $marginR) {
+ 	margin-left: $marginL;
+ 	margin-right: $marginR;
+ }
+
+ @mixin marginTB($marginT, $marginB) {
+ 	margin-top: $marginT;
+ 	margin-bottom: $marginB;
+ }
+
+ @mixin paddingLR($paddingL, $paddingR) {
+ 	padding-left: $paddingL;
+ 	padding-right: $paddingR;
+ } 
+
+ @mixin paddingTB($paddingT, $paddingB) {
+ 	padding-top: $paddingT;
+ 	padding-bottom: $paddingB;
+ } 
+  %sectionHeader {
+ 	.header {
+ 		display: inline-block;
+ 		font-size: 2.5em;
+ 		color: $black;
+ 		text-align: center;
+ 		text-transform: uppercase;
+ 		margin-top: 2.2em;
+ 		
+ 	}
+ 	.descr {
+ 		font-size: 1.125em;
+ 		color: $black;
+ 		text-align: center;
+ 		@include marginTB(2.5em, 5.5em);
+ 	} 
+ }
+
+  %sectionSubheader {
+ 	.header {
+ 		font-size: 1.5em;
+ 		text-transform: uppercase;
+ 		@include marginTB(3.75em, 1.6em);
+ 		@include xs {
+ 			@include marginTB(1.75em, 0.6em)
+ 		}
+ 	}
+ 	.descr {
+ 		font-size: 1em;
+ 		margin-bottom: 3em;
+ 	}
+ }
+

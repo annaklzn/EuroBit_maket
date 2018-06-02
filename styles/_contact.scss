@@ -1,0 +1,35 @@
+.section-twelve {
+	background-color: $greyDark;
+	.section-twelve__container {
+		@include paddingTB(3.4em, 3.4em);
+		.logo {
+			@include marginTB(1em, 1em);
+		}
+
+		.address {
+			margin-top: 2.5em;
+		}
+		.contacts {
+			color: $greyLight;
+			.tel {
+				color: $greyLight;
+			}
+			.email {
+				color: $greyLight;
+			}
+
+		}
+		@include md {
+			text-align: center;
+			.logo {
+				margin: 0 auto;
+			}
+		}
+		@include xs {
+			text-align: center;
+			.logo {
+				margin: 0 auto;
+			}
+		}
+	}
+}
