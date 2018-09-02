@@ -2,7 +2,13 @@
 	background-color: $greyLight2;
 	.container {
 		text-align: center;
-		@extend %sectionHeader;
+		@extend %sectionSubheader;
+		
+		.header{
+			padding-top: 50px;
+			@extend %boldText;
+ 		}	
+		}
 		.team-container {
 			.photo-container {
 				position: relative;
@@ -10,9 +16,11 @@
 					margin: 0 auto;
 					width: 100%;
 					height: 100%;
+					border-radius: 50%;
 				}
 				.overlay {
 					display: none;
+					border-radius: 50%;
 				}
 			}	
 			.info {
@@ -58,4 +66,3 @@
 	}
 }					
 }
-}	

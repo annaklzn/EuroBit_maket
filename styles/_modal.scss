@@ -17,9 +17,10 @@ body{
   margin-bottom: 30px;
   font-size: 1.125rem;
   color: $greyDark2;
+
 }
 
-.form-input__name, .form-input__phone {
+.form-input__name, .form-input__phone, .form-input__email {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 30px;
@@ -29,7 +30,7 @@ body{
   border-radius: 3px;
 }
 
-.form-input__name:focus, .form-input__phone:focus {
+.form-input__name:focus, .form-input__phone:focus, .form-input__email:focus {
   border: 1px solid $yellow;
 }
 .form-input__button {
@@ -62,12 +63,13 @@ body{
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
+   
   }
   .form-element {
     padding: 15px;
     margin: 0 auto;
   }
-  .form-input__name, .form-input__phone {
+  .form-input__name, .form-input__phone, .form-input__email {
     margin-bottom: 15px;
   }
 }

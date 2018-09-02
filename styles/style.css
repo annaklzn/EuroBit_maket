@@ -17,18 +17,18 @@
   src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
-.sect-main .price-btn-container .price-btn, .section-four .price-btn-container .price-btn, .section-two .section-two__descr .btn-container .btn, .form-input__button, .sect-three .price-table-wrapper .pricing-table__button {
+.sect-main .price-btn-container .price-btn, .section-four .price-btn-container .price-btn, .form-input__button, .sect-three .price-table-wrapper .pricing-table__button {
   background: linear-gradient(16deg, #b80e0f, #e7b700); }
 
-.sect-main .price-btn-container .price-btn:hover, .section-four .price-btn-container .price-btn:hover, .section-two .section-two__descr .btn-container .btn:hover, .form-input__button:hover, .sect-three .price-table-wrapper .pricing-table__button:hover {
+.sect-main .price-btn-container .price-btn:hover, .section-four .price-btn-container .price-btn:hover, .form-input__button:hover, .sect-three .price-table-wrapper .pricing-table__button:hover {
   background: linear-gradient(16deg, #e7b700, #b80e0f);
   -webkit-transition: background 0.7s;
   transition: background 0.7s; }
 
-.sect-main .main-header, .sect-main .main-descr {
+.sect-main .main-header, .sect-main .main-descr, .section-four .header, .section-four .services-container .services-header, .section-two .section-two__descr .header, .section-five .container .header, .money_back, .sect-three .header, .sect-three .price-table-wrapper .pricing-table__header {
   font-family: 'Proxima Nova Bd', sans-serif; }
 
-.sect-main .price-btn-container .price-btn, .section-four .price-btn-container .price-btn, .section-two .section-two__descr .btn-container .btn, .form-input__button, .sect-main .header .menu-nav .nav-item .nav-link, body {
+.sect-main .price-btn-container .price-btn, .section-four .price-btn-container .price-btn, .form-input__button, .sect-main .header .menu-nav .nav-item .nav-link, body {
   font-family: 'Proxima Nova Rg', sans-serif; }
 
 .sect-main .scroll-container .scroll-descr {
@@ -40,14 +40,14 @@
 .sect-main .scroll-container .scroll-descr {
   font-size: 0.77rem; }
 
-.sect-main .price-btn-container .price-btn, .section-four .price-btn-container .price-btn, .section-two .section-two__descr .btn-container .btn, .form-input__button {
+.sect-main .price-btn-container .price-btn, .section-four .price-btn-container .price-btn, .form-input__button {
   width: 205px;
   padding: 0.88rem 0.88rem;
   border-radius: 1.7rem;
-  color: #FFFFF0; }
-  .sect-main .price-btn-container .price-btn:active, .section-four .price-btn-container .price-btn:active, .section-two .section-two__descr .btn-container .btn:active, .form-input__button:active {
+  color: #FFFFFF; }
+  .sect-main .price-btn-container .price-btn:active, .section-four .price-btn-container .price-btn:active, .form-input__button:active {
     border-color: transparent; }
-  .sect-main .price-btn-container .price-btn:focus, .section-four .price-btn-container .price-btn:focus, .section-two .section-two__descr .btn-container .btn:focus, .form-input__button:focus {
+  .sect-main .price-btn-container .price-btn:focus, .section-four .price-btn-container .price-btn:focus, .form-input__button:focus {
     border-color: transparent; }
 
 /*Media queries*/
@@ -62,32 +62,30 @@ html {
 .textUp {
   text-transform: uppercase; }
 
-.section-five .container .header {
-  display: inline-block;
-  font-size: 2.5em;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 2.2em; }
-.section-five .container .descr {
-  font-size: 1.125em;
-  color: #000;
-  text-align: center;
-  margin-top: 2.5em;
-  margin-bottom: 5.5em; }
-
-.section-four .header, .section-two .header, .offer_info .header {
+.section-four .header, .section-two .header, .section-five .container .header, .offer_info .header {
   font-size: 1.5em;
   text-transform: uppercase;
   margin-top: 3.75em;
   margin-bottom: 1.6em; }
   @media (min-width: 320px) and (max-width: 575px) {
-    .section-four .header, .section-two .header, .offer_info .header {
+    .section-four .header, .section-two .header, .section-five .container .header, .offer_info .header {
       margin-top: 1.75em;
       margin-bottom: 0.6em; } }
-.section-four .descr, .section-two .descr, .offer_info .descr {
+.section-four .descr, .section-two .descr, .section-five .container .descr, .offer_info .descr {
   font-size: 1em;
   margin-bottom: 3em; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  background: #303030;
+  padding: 10px; }
+
+.sticky + .content {
+  padding-top: 80px; }
 
 .sect-main {
   background-image: url(../img/bg_main.jpg);
@@ -101,20 +99,20 @@ html {
         -ms-flex-pack: end;
             justify-content: flex-end; }
     .sect-main .header .menu-nav .nav-item .nav-link {
-      color: #FFFFF0;
+      color: #FFFFFF;
       font-size: 1.4rem; }
     .sect-main .header .menu-nav .nav-item .contact {
-      border: 2px solid #FFFFF0;
+      border: 2px solid #FFFFFF;
       border-radius: 1.4rem; }
   .sect-main .main-header {
     text-align: center;
-    color: #FFFFF0;
+    color: #FFFFFF;
     text-shadow: 1px 1px 2px #000, 0 0 2rem #b6b7b2;
     margin: 0 auto;
     margin-top: 8.1rem; }
   .sect-main .main-descr {
     text-align: center;
-    color: #FFFFF0;
+    color: #FFFFFF;
     font-size: 1.6rem;
     text-shadow: 1px 1px 2px #000; }
   .sect-main .price-btn-container {
@@ -123,7 +121,7 @@ html {
   .sect-main .scroll-container .scroll-descr {
     padding-bottom: 5.55rem; }
   .sect-main .scroll-container .scroll-down {
-    color: #FFFFF0; }
+    color: #FFFFFF; }
     .sect-main .scroll-container .scroll-down:hover {
       text-decoration: none; }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -169,7 +167,7 @@ html {
       padding-bottom: 6.2rem; } }
 
 .section-four {
-  background-color: #FFFFF0; }
+  background-color: #FFFFFF; }
   .section-four .header {
     color: #1c1c1c;
     text-align: center; }
@@ -179,7 +177,9 @@ html {
   .section-four .services-container {
     text-align: center;
     padding-top: 2.6em;
-    padding-bottom: 4.6em; }
+    padding-bottom: 1.6em; }
+    .section-four .services-container .services-img {
+      padding-bottom: 30px; }
     .section-four .services-container .services-header {
       text-transform: uppercase;
       font-size: 1.125em;
@@ -189,19 +189,17 @@ html {
       color: #303030; }
   .section-four .price-btn-container {
     padding-top: 3.8rem;
-    padding-bottom: 5.2rem;
+    padding-bottom: 1.5rem;
     margin: 0 auto; }
     .section-four .price-btn-container .price-btn {
       paddind-left: 15px; }
 
 .section-two {
-  background-color: #FFFFF0; }
+  background-color: #FFFFFF; }
   .section-two .section-two__descr .header {
     color: #000; }
   .section-two .section-two__descr .descr {
     color: #303030; }
-  .section-two .section-two__descr .btn-container {
-    margin-bottom: 5.1em; }
   @media (min-width: 768px) and (max-width: 991px) {
     .section-two .section-two__descr .header {
       text-align: center; }
@@ -217,52 +215,56 @@ html {
   background-color: #f5f5f5; }
   .section-five .container {
     text-align: center; }
-    .section-five .container .team-container .photo-container {
-      position: relative; }
-      .section-five .container .team-container .photo-container .photo {
-        margin: 0 auto;
-        width: 100%;
-        height: 100%; }
-      .section-five .container .team-container .photo-container .overlay {
-        display: none; }
-    .section-five .container .team-container .info {
-      color: #000;
-      border: 2px solid #e4e4e4;
-      margin-top: 1.56em;
-      margin-bottom: 5.6em;
-      padding-top: 1.56em;
-      padding-bottom: 1.56em; }
-      .section-five .container .team-container .info .name {
-        font-size: 1.5em;
-        text-transform: uppercase;
-        margin-top: 0;
-        margin-bottom: 0; }
-      .section-five .container .team-container .info .prof {
-        font-size: 0.875em;
-        text-transform: uppercase;
-        margin-top: 0;
-        margin-bottom: 0; }
-    .section-five .container .team-container:hover .overlay {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
+    .section-five .container .header {
+      padding-top: 50px; }
+  .section-five .team-container .photo-container {
+    position: relative; }
+    .section-five .team-container .photo-container .photo {
+      margin: 0 auto;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); }
-      .section-five .container .team-container:hover .overlay .socials {
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        border: 2px solid #FFFFF0;
-        margin-top: 5.37em;
-        margin-bottom: 5.37em;
-        color: #FFFFF0;
-        font-size: 1.8em;
-        line-height: 55px;
-        display: block; }
-    .section-five .container .team-container:hover .info {
-      border-color: #000; }
+      border-radius: 50%; }
+    .section-five .team-container .photo-container .overlay {
+      display: none;
+      border-radius: 50%; }
+  .section-five .team-container .info {
+    color: #000;
+    border: 2px solid #e4e4e4;
+    margin-top: 1.56em;
+    margin-bottom: 5.6em;
+    padding-top: 1.56em;
+    padding-bottom: 1.56em; }
+    .section-five .team-container .info .name {
+      font-size: 1.5em;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .section-five .team-container .info .prof {
+      font-size: 0.875em;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0; }
+  .section-five .team-container:hover .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .section-five .team-container:hover .overlay .socials {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+      margin-top: 5.37em;
+      margin-bottom: 5.37em;
+      color: #FFFFFF;
+      font-size: 1.8em;
+      line-height: 55px;
+      display: block; }
+  .section-five .team-container:hover .info {
+    border-color: #000; }
 
 .section-twelve {
   background-color: #303030; }
@@ -297,6 +299,18 @@ a {
 .offer_info {
   text-align: center;
   margin: 0 auto; }
+
+.full-width {
+  background-color: #FFD700;
+  border-radius: 10px;
+  margin-top: 1.0em; }
+
+.money_back {
+  font-size: 1.5em;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1.0em; }
 
 .sect-three {
   background-color: #f5f5f5; }
@@ -402,7 +416,7 @@ a {
   font-size: 1.125rem;
   color: #1c1c1c; }
 
-.form-input__name, .form-input__phone {
+.form-input__name, .form-input__phone, .form-input__email {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -412,7 +426,7 @@ a {
   border: 1px solid #b6b7b2;
   border-radius: 3px; }
 
-.form-input__name:focus, .form-input__phone:focus {
+.form-input__name:focus, .form-input__phone:focus, .form-input__email:focus {
   border: 1px solid #e7b700; }
 
 .form-input__button {
@@ -443,7 +457,7 @@ a {
     padding: 15px;
     margin: 0 auto; }
 
-  .form-input__name, .form-input__phone {
+  .form-input__name, .form-input__phone, .form-input__email {
     margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

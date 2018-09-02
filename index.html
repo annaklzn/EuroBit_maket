@@ -14,25 +14,33 @@
   <body>
     <!--Main section-->
     <section id="section-main" class="sect-main">
-      <div class="container">
-        <header class="header">
+      <div class="container"> 
+        <header class="header col-md-12">
           <div class="row justify-content-between">
             <div class="logo-container col-12 col-lg-4 my-3  align-self-center">
               <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
             <!-- Navigation menu -->
-            <div class="menu-nav col-12 col-lg-8 my-lg-3 my-xs-0">
-              <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="menu-nav col-12 col-lg-8 my-lg-3 my-xs-0" id="menu-nav">
+              <nav class="navbar navbar-expand-sm navbar-dark">
                 <button class="navbar-toggler mx-auto hamburger" data-toggle="collapse" data-target="#menu">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
                   <div class="navbar-nav">
                     <ul class="nav">
-                      <li class="nav-item"><a href="#section-main" class="nav-link active">Home</a></li>
-                      <li class="nav-item"><a href="#sect-two" class="nav-link">About us</a></li>
-                      <li class="nav-item"><a href="#sect-three" class="nav-link">Offer</a></li>
-                      <li class="nav-item"><a href="#sect-last" class="nav-link contact py-2 px-sm-3 px-xs-2">Contacts</a></li>     
+                      <li class="nav-item">
+                        <a href="#section-main" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#sect-two" class="nav-link">About us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#sect-three" class="nav-link">Offer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#sect-last" class="nav-link contact py-2 px-sm-3 px-xs-2">Contacts</a>
+                      </li>     
                     </ul>
                   </div>
                 </div>   
@@ -52,7 +60,7 @@
       </div>
     </section>
 <!--About Us-->
-<section id="sect-two" class="section-two">
+<section id="sect-two" class="section-two content">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-12 section-two__descr">
@@ -77,7 +85,7 @@
   </div>
 </section>
 <!--Our offer-->
-<section class="sect-three" id="sect-three">
+<section class="sect-three" id="sect-three content">
   <div class="container">
     <div class="row">
   
@@ -86,8 +94,14 @@
     <p>
       Our company specializes in mining solutions for customers of all sizes and varied levels of experience. We believe in the power of options. That’s why we’ve built our business with a variety of solutions and a high level of service to fit your needs, so we propose four types of business packages for your investments.
     </p>
-  </div>
 
+  </div>
+    
+  <div class="col-md-10 full-width offset-md-1 coll-sm-12 offset-sm-0"> 
+      <p class="money_back">
+        100% Money Back Guarantee after 1 years
+      </p>
+  </div>
 <div class="price-table-wrapper">
   <div class="pricing-table">
     <h2 class="pricing-table__header">Silver Package</h2>
@@ -135,7 +149,7 @@
 </div>
 </section>
 <!--benefits-->
-<section id="sect-four" class="section-four">
+<section id="sect-four" class="section-four content">
   <div class="container">
     <h2 class="header">Benefits of working with us</h2>
     <div class="services-container clearfix">
@@ -172,7 +186,7 @@
             No matter which package you choose, you are getting the latest technology, which guarantees maximum performance for as long as possible.
           </p>
         </div>
-          <div class="col-sm-4 col-xs-12">
+          <div class="col-sm-4 col-xs-12"> 
           <img src="img/icon_video.png" class="services-img" alt="24 hours video">
 
           <h4 class="services-header">live video translation</h4>
@@ -207,8 +221,9 @@
                   <form id="form-contact" method="POST" class="form-element" autocomplete="off">
                     <p class="form-title">Ask for callback</p>
                     <p class="form-message"></p>
-                      <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Your name" required>
-                      <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Your phone" required>
+                      <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Name" required>
+                      <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Phone" required>
+                      <input type="email" class="form-input__email" tabindex="0" placeholder="Email" >
                       <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
                       <input type="submit" class="form-input__button" value="Send">
                   </form>
@@ -219,7 +234,7 @@
   </div>
 </div>
 <!--OurTeam-->
-    <section id="sect-five" class="section-five">
+    <section id="sect-five" class="section-five content">
   <div class="container">
     <h2 class="header">Our Team Members</h2>
     <p class="descr">
@@ -326,7 +341,7 @@
   </div>
 </section>
 <!--ContactUs-->
-<section id="sect-last" class="section-twelve">
+<section id="sect-last" class="section-twelve content">
   <div class="container section-twelve__container">
     <div class="row">
       <div class="col-md-6 col-sm-6 col-xs-12">

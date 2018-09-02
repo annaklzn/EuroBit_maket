@@ -6,12 +6,37 @@ a{
   @extend %sectionSubheader;
   margin: 0 auto;
 
-}
-.modal_contact{
+
 
 }
+.full-width {
+    
+    background-color: #FFD700;
+    border-radius: 10px;
+    margin-top: 1.0em;
+
+    
+}
+.money_back{
+    
+    font-size: 1.5em;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.0em;
+    @extend %boldText;
+
+
+
+}
+
 .sect-three{
   background-color: $greyLight2;
+  .header{
+    @extend %boldText;
+  }
+
+  
   .price-table-wrapper{
     font-family: 'Proxima Nova Rg', sans-serif;
     text-align: center;
@@ -36,6 +61,7 @@ a{
         font-size: 20px;
         color: $black;
         background: #E0E0E0;
+        @extend %boldText;
       }
       &__price{
         color: #48AD9E;

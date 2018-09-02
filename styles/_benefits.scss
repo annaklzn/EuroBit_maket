@@ -4,15 +4,21 @@
 	.header {
 		color: $greyDark2;
 		text-align: center;
+		@extend %boldText;
+
 	}
 	.descr {
 		color: $greyDark2;
 		text-align: center;
 	}
 	.services-container {
+		.services-img{
+			padding-bottom: 30px;
+		}
 		text-align: center;
-		@include paddingTB(2.6em, 4.6em);
+		@include paddingTB(2.6em, 1.6em);
 		.services-header {
+			@extend %boldText;
 			text-transform: uppercase;
 			font-size: 1.125em;
 			color: $greyDark2;
@@ -25,7 +31,7 @@
 	.price-btn-container {
 		
 		padding-top: 3.8rem;
-		padding-bottom: 5.2rem;
+		padding-bottom: 1.5rem;
 		margin: 0 auto;
 
 		.price-btn {
